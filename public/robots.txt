@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://zachariatrying.github.io/ustakontrol/sitemap.xml

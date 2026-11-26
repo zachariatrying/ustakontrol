@@ -1,0 +1,16 @@
+{
+  "name": "UstaKontrol — Tadilat Teklif Denetçisi",
+  "short_name": "UstaKontrol",
+  "description": "2-3 usta teklifini 13 kalemde karşılaştır, unutulan masrafları ve peşinat riskini yakala.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#F8FAFC",
+  "theme_color": "#1E3A5F",
+  "icons": [
+    {
+      "src": "store-assets/ustakontrol_icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ]
+}
