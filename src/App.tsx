@@ -466,9 +466,17 @@ export default function App() {
           </div>
         )}
 
-        <footer className="border-t-2 border-[#0E3A5D]/30 pt-4 text-xs text-[#475569] flex items-start gap-2">
-          <AlertTriangle className="w-4 h-4 text-[#E05319] shrink-0 mt-0.5" />
-          <p>UstaKontrol maliyet aralıkları bilgilendirme amaçlıdır; mühendislik keşfi yerine geçmez.</p>
+        <footer className="border-t-2 border-[#0E3A5D]/30 pt-4 text-xs text-[#475569] flex flex-wrap items-center justify-between gap-2">
+          <div className="flex items-start gap-2">
+            <AlertTriangle className="w-4 h-4 text-[#E05319] shrink-0 mt-0.5" />
+            <p>
+              UstaKontrol maliyet aralıkları bilgilendirme amaçlıdır; mühendislik keşfi, yapı denetim veya hukuk
+              danışmanlığı yerine geçmez.
+            </p>
+          </div>
+          <a href="./privacy.html" className="underline font-bold text-[#0E3A5D]">
+            Gizlilik &amp; KVKK
+          </a>
         </footer>
       </main>
 
