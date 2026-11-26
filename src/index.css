@@ -1,1 +1,56 @@
 @import "tailwindcss";
+
+:root {
+  --bg-vellum: #f4f7fa;
+  --ink-prussian: #0e3a5d;
+  --accent-chalk: #e05319;
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-sans: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-vellum);
+  color: var(--ink-prussian);
+  background-image:
+    linear-gradient(to right, rgba(14, 58, 93, 0.055) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(14, 58, 93, 0.055) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.font-bp-display {
+  font-family: var(--font-display);
+  text-wrap: balance;
+}
+
+.font-bp-mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.hatched-extras {
+  background: repeating-linear-gradient(
+    -45deg,
+    #e05319,
+    #e05319 6px,
+    #fb923c 6px,
+    #fb923c 12px
+  );
+}
+
+::selection {
+  background: rgba(224, 83, 25, 0.2);
+  color: #0e3a5d;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-chalk);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition-duration: 0.01ms !important;
+  }
+}
