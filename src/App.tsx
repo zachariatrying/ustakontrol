@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
+import { GuideWidget } from './components/GuideWidget';
 import {
   AlertTriangle,
   Award,
@@ -508,6 +509,7 @@ export default function App() {
           </div>
         </div>
       )}
+      <GuideWidget />
     </div>
   );
 }
